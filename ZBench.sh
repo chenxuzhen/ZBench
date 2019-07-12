@@ -167,7 +167,7 @@ speed_test() {
     local ipaddress=$(ping -c1 -n `awk -F'/' '{print $3}' <<< $1` | awk -F'[()]' '{print $2;exit}')
     local nodeName=$2
     local latency=$(ping $ipaddress -c 3 | grep avg | awk -F / '{print $5}')" ms"
-    printf "${YELLOW}%-26s${GREEN}%-18s${RED}%-20s${SKYBLUE}%-12s${PLAIN}\n" "${nodeName}" "${ipaddress}" "${speedtest}" "${latency}"
+    printf "${YELLOW}%-76s${GREEN}%-18s${RED}%-20s${SKYBLUE}%-12s${PLAIN}\n" "${nodeName}" "${ipaddress}" "${speedtest}" "${latency}"
 
     #Record Speed Data
     echo ${ipaddress} >> /tmp/speed.txt
@@ -225,7 +225,7 @@ speed_test_cn(){
             local relatency=$(echo "$temp" | awk -F ':' '/Hosted/{print $2}')
             local nodeName=$2
 
-            printf "${YELLOW}%-25s${GREEN}%-18s${RED}%-20s${SKYBLUE}%-12s${PLAIN}\n" "${nodeName}" "${reupload}" "${REDownload}" "${relatency}"
+            printf "${YELLOW}%-75s${GREEN}%-18s${RED}%-20s${SKYBLUE}%-12s${PLAIN}\n" "${nodeName}" "${reupload}" "${REDownload}" "${relatency}"
         else
             local cerror="ERROR"
         fi
@@ -242,7 +242,7 @@ speed_test_cn(){
             fi
             local nodeName=$2
 
-            printf "${YELLOW}%-25s${GREEN}%-18s${RED}%-20s${SKYBLUE}%-12s${PLAIN}\n" "${nodeName}" "${reupload}" "${REDownload}" "${relatency}"
+            printf "${YELLOW}%-75s${GREEN}%-18s${RED}%-20s${SKYBLUE}%-12s${PLAIN}\n" "${nodeName}" "${reupload}" "${REDownload}" "${relatency}"
         else
             local cerror="ERROR"
         fi
@@ -414,9 +414,9 @@ echo $io2 >> /tmp/info.txt
 echo $io3 >> /tmp/info.txt
 AKEY=$( uuid )
 
-printf "%-26s%-18s%-20s%-12s\n" "Node Name" "IP Address" "Download Speed" "Latency"
+printf "%-76s%-18s%-20s%-12s\n" "Node Name" "IP Address" "Download Speed" "Latency"
 speed && next
-printf "%-26s%-18s%-20s%-12s\n" "Node Name" "Upload Speed" "Download Speed" "Latency"
+printf "%-76s%-18s%-20s%-12s\n" "Node Name" "Upload Speed" "Download Speed" "Latency"
 speed_cn && next
 python /tmp/ZPing.py
 next
