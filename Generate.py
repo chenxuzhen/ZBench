@@ -405,8 +405,7 @@ html = """
     <tr>
       <td>Softlayer 新加坡</td>
       <td>{42}</td>
-      <td>{43}</td>
-      <td>{44}</td>
+      <td>{43}</td><td>{44}</td>
     </tr>
     <tr>
       <td>Softlayer 香港</td>
@@ -422,7 +421,7 @@ html = """
       <td>{50}</td>
     </tr>    
     
-     <tr>
+    <tr>
       <td>Softlayer Vultr, Paris, France</td>
       <td>{51}</td>
       <td>{52}</td>
@@ -568,7 +567,6 @@ html = """
       <td>{122}</td>
       <td>{123}</td>
     </tr>    
-    
   </tbody>
 </table>
 </dev>
@@ -816,7 +814,16 @@ speed_cn[0],speed_cn[1],speed_cn[2],speed_cn[3],speed_cn[4],speed_cn[5],speed_cn
 speed_cn[13],speed_cn[14],speed_cn[15],speed_cn[16],speed_cn[17],speed_cn[18],speed_cn[19],speed_cn[20],speed_cn[21],speed_cn[22],speed_cn[23],\
 speed_cn[24],speed_cn[25],speed_cn[26],speed_cn[27],speed_cn[28],speed_cn[29],speed_cn[30],speed_cn[31],speed_cn[32],speed_cn[33],speed_cn[34],speed_cn[35],speed_cn[36],\
 speed_cn[37],speed_cn[38],speed_cn[39],speed_cn[40],speed_cn[41],speed_cn[42],speed_cn[43],speed_cn[44],speed_cn[45],speed_cn[46],speed_cn[47],speed_cn[48],speed_cn[49],\
-speed_cn[50],speed_cn[51],speed_cn[52],speed_cn[53],speed_cn[54],speed_cn[55],speed_cn[56],speed_cn[57],speed_cn[58])	
+
+speed_cn[50],	speed_cn[51],	speed_cn[52],	speed_cn[53],	speed_cn[54],	speed_cn[55],	speed_cn[56],	speed_cn[57],	speed_cn[58],	speed_cn[59],
+speed_cn[60],	speed_cn[61],	speed_cn[62],	speed_cn[63],	speed_cn[64],	speed_cn[65],	speed_cn[66],	speed_cn[67],	speed_cn[68],	speed_cn[69],
+speed_cn[70],	speed_cn[71],	speed_cn[72],	speed_cn[73],	speed_cn[74],	speed_cn[75],	speed_cn[76],	speed_cn[77],	speed_cn[78],	speed_cn[79],
+speed_cn[80],	speed_cn[81],	speed_cn[82],	speed_cn[83],	speed_cn[84],	speed_cn[85],	speed_cn[86],	speed_cn[87],	speed_cn[88],	speed_cn[89],
+speed_cn[90],	speed_cn[91],	speed_cn[92],	speed_cn[93],	speed_cn[94],	speed_cn[95],	speed_cn[96],	speed_cn[97],	speed_cn[98],	speed_cn[99],
+speed_cn[100],	speed_cn[101],	speed_cn[102],	speed_cn[103],	speed_cn[104],	speed_cn[105],	speed_cn[106],	speed_cn[107],	speed_cn[108],	speed_cn[109],
+speed_cn[110],	speed_cn[111],	speed_cn[112],	speed_cn[113],	speed_cn[114],	speed_cn[115],	speed_cn[116],	speed_cn[117],	speed_cn[118],	speed_cn[119],
+speed_cn[120],	speed_cn[121],	speed_cn[122],	speed_cn[123],	speed_cn[124],	speed_cn[125],	speed_cn[126],	speed_cn[127],	speed_cn[128],	speed_cn[129],
+speed_cn[130],	speed_cn[131],	speed_cn[132],	speed_cn[133],	speed_cn[134])	
 
 html = html + shm_html + sht_html + shu_html + gdm_html + gdt_html + gdu_html + own_html + footer
 
