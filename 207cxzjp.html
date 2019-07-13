@@ -1,0 +1,2250 @@
+
+
+<html>
+<head>
+    <meta charset="UTF-8" id="home">
+    <meta name="keywords" content="Zbench,Function Club,Bench Mark,VPS,主机博客,测评,测试脚本">
+    <title>Zbench v1.0 HTML Output</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/semantic-ui/2.2.13/semantic.min.css">
+<script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/semantic-ui/2.2.13/semantic.min.js"></script>
+</head>
+<body>
+
+<div class="ui attached stackable menu">
+  <div class="ui container">
+    <a class="item" onclick="javascript:scroller('home', 100);">
+      <i class="home icon"></i> 主页
+    </a>
+    <a class="item" onclick="javascript:scroller('system', 300);">
+      <i class="grid layout icon"></i> 系统信息
+    </a>
+    <a class="item" onclick="javascript:scroller('hdd', 600);">
+      <i class="desktop icon"></i> 硬盘 I/O
+    </a>
+    <a class="item" onclick="javascript:scroller('net', 900);">
+      <i class="sitemap icon"></i> 网络测试
+    </a>
+    <a class="item" onclick="javascript:scroller('route', 1600);">
+      <i class="plug icon"></i> 路由追踪
+    </a>
+    <div class="ui simple dropdown item">
+      更多
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item" href="https://www.github.com/FunctionClub"><i class="edit icon"></i> 关于我们</a>
+        <a class="item" href="https://github.com/FunctionClub/ZBench/"><i class="github icon"></i>Github </a>
+      </div>
+    </div>
+    <div class="right item">
+      <div class="ui">    
+            <a href="https://github.com/FunctionClub/ZBench/">ZBench v1.0-Beta</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui hidden divider"></div>
+<div class="ui container">
+<div class="ui message red">
+<i class="close icon"></i>
+  <div class="header">
+    您正在使用的是开发中的项目。
+  </div>
+  <p>此程序正处于开发版, 我们无法保证在运行过程中不会出错. 我们将在近期测试后放出正式版，敬请期待.</p>
+</div>
+</div>
+<div class="ui hidden divider"></div>
+<div class="ui container">
+<div class="ui message">
+  <div class="header">
+    测试数据准确性说明
+  </div>
+  <p>请注意，所有的测试数据为测试时的实时数据. 我们不保证您的服务商会在日后一直使用保持完全相同的服务。数据仅供参考.</p>
+</p>
+</div>
+</div>
+<div class="ui hidden divider" id="system"></div>
+
+<h2 class="ui center aligned icon header">
+  <i class="circular Laptop icon"></i>
+  系统信息
+</h2>
+<div class="ui hidden divider"></div>
+<div class="ui container">
+<table class="ui celled striped table">
+  <thead>
+    <tr> 
+      <th>项目</th>
+      <th>数据</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td class="collapsing">
+        <i class="Microchip icon"></i> CPU 型号
+      </td>
+      <td>Virtual CPU 523cbcdd6ca4</td>
+    </tr>
+    <tr>
+      <td>
+        <i class="Microchip icon"></i> CPU 核心数
+      </td>
+      <td>1</td>
+      
+    </tr>
+    <tr>
+      <td>
+        <i class="Microchip icon"></i> CPU 主频
+      </td>
+      <td>2394.454 MHz</td>
+      
+    </tr>
+    <tr>
+      <td>
+        <i class="Archive icon"></i> 硬盘大小
+      </td>
+      <td>25.0 GB (13.0 GB 已使用) </td>
+      
+    </tr>
+    <tr>
+      <td>
+        <i class="Lightning icon"></i> 内存大小
+      </td>
+      <td>991 MB (244 MB 已使用) </td>
+      
+    </tr>
+    <tr>
+      <td>
+        <i class="Database icon"></i> SWAP 交换空间大小
+      </td>
+      <td>1023 MB (78 MB 已使用)</td>
+      
+    </tr>
+    <tr>
+      <td>
+        <i class="Bar Chart icon"></i> 在线时长
+      </td>
+      <td>1 days, 6 hour 45 min</td>
+      
+    </tr>
+    <tr>
+      <td>
+        <i class="Pie Chart icon"></i> 系统负载
+      </td>
+      <td>0.00, 0.01, 0.05</td>
+      
+    </tr>
+    <tr>
+      <td>
+        <i class="Windows icon"></i> 系统
+      </td>
+      <td>CentOS 7.6.1810</td>
+      
+    </tr>
+    <tr>
+      <td>
+        <i class="Columns icon"></i> 架构
+      </td>
+      <td>x86_64 (64 位) </td>
+      
+    </tr>
+    <tr>
+      <td>
+        <i class="File Code Outline icon"></i> 核心
+      </td>
+      <td>3.10.0-957.21.3.el7.x86_64</td>
+      
+    </tr>
+    <tr>
+      <td>
+        <i class="Group Object icon"></i> 虚拟化技术
+      </td>
+      <td>kvm</td>
+      
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+<div class="ui hidden divider" id="hdd"></div>
+
+<h2 class="ui center aligned icon header">
+  <i class="circular Clone icon"></i>
+  硬盘 I/O
+</h2>
+<div class="ui hidden divider"></div>
+<div class="ui container">
+<table class="ui celled striped table">
+  <thead>
+    <tr>
+    <th>次数</th>
+      <th>速度</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td class="collapsing">
+        <i class="folder icon"></i> 第一次测试
+      </td>
+      <td>313 MB/s</td>
+    </tr>
+    <tr>
+      <td>
+        <i class="folder icon"></i> 第二次测试
+      </td>
+      <td>315 MB/s</td>
+    </tr>
+    <tr>
+      <td>
+        <i class="folder icon"></i> 第三次测试
+      </td>
+      <td>341 MB/s</td>
+    </tr>
+
+  </tbody>
+</table>
+</div>
+
+
+
+
+
+
+<div class="ui hidden divider" id="net"></div>
+<h2 class="ui center aligned icon header">
+  <i class="circular Internet Explorer icon"></i>
+  网络测试
+</h2>
+<div class="ui hidden divider"></div>
+<div class="ui container">
+<table class="ui compact striped table">
+  <thead>
+    <tr>
+      <th>节点</th>
+      <th>IP 地址</th>
+      <th>下载速度</th>
+      <th>延迟</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CacheFly</td>
+      <td>204.93.150.152</td>
+      <td>81.0MB/s</td>
+      <td>1.798 ms</td>
+    </tr>
+    <tr>
+      <td>Linode 日本</td>
+      <td>106.187.96.148</td>
+      <td>269MB/s</td>
+      <td>2.975 ms</td>
+    </tr>
+    <tr>
+      <td>Linode 新加坡</td>
+      <td>139.162.23.4</td>
+      <td>33.9MB/s</td>
+      <td>65.339 ms</td>
+    </tr>
+    <tr>
+      <td>Linode 英国</td>
+      <td>176.58.107.39</td>
+      <td>10.7MB/s</td>
+      <td>214.546 ms</td>
+    </tr>
+    <tr>
+      <td>Linode 法兰克福</td>
+      <td>139.162.130.8</td>
+      <td>8.73MB/s</td>
+      <td>259.669 ms</td>
+    </tr>
+    <tr>
+      <td>Linode 加拿大</td>
+      <td>50.116.14.9</td>
+      <td>21.3MB/s</td>
+      <td>105.418 ms</td>
+    </tr>
+    <tr>
+      <td>Softlayer 达拉斯</td>
+      <td>173.192.68.18</td>
+      <td>12.3MB/s</td>
+      <td>140.691 ms</td>
+    </tr>
+    <tr>
+      <td>Softlayer 西雅图</td>
+      <td>67.228.112.250</td>
+      <td>21.2MB/s</td>
+      <td>87.917 ms</td>
+    </tr>
+    <tr>
+      <td>Softlayer 法兰克福</td>
+      <td>159.122.69.4</td>
+      <td>3.09MB/s</td>
+      <td>247.070 ms</td>
+    </tr>
+    <tr>
+      <td>Softlayer 新加坡</td>
+      <td>119.81.28.170</td>
+      <td>27.7MB/s</td><td>67.620 ms</td>
+    </tr>
+    <tr>
+      <td>Softlayer 香港</td>
+      <td>119.81.130.170</td>
+      <td>35.1MB/s</td>
+      <td>49.089 ms</td>
+    </tr>
+    
+    <tr>
+      <td>Softlayer Vultr, Frankfurt, DE</td>
+      <td>108.61.210.117</td>
+      <td>8.80MB/s</td>
+      <td>260.202 ms</td>
+    </tr>    
+    
+    <tr>
+      <td>Softlayer Vultr, Paris, France</td>
+      <td>108.61.209.127</td>
+      <td>10.9MB/s</td>
+      <td>224.350 ms</td>
+    </tr>       
+
+    <tr>
+      <td>Softlayer Vultr, London, UK</td>
+      <td>108.61.198.102</td>
+      <td>9.67MB/s</td>
+      <td>250.996 ms</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Vultr, Singapore</td>
+      <td>108.61.196.101</td>
+      <td>11.3MB/s</td>
+      <td>212.048 ms</td>
+    </tr>    
+    
+    <tr>
+      <td>Softlayer Vultr, New York (New Jersey)</td>
+      <td>45.32.100.168</td>
+      <td>29.3MB/s</td>
+      <td>68.935 ms</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Vultr, Tokyo, Japan</td>
+      <td>108.61.149.182</td>
+      <td>15.9MB/s</td>
+      <td>150.966 ms</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Vultr, Chicago, Illinois</td>
+      <td>108.61.201.151</td>
+      <td>296MB/s</td>
+      <td>0.918 ms</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Vultr, Atlanta, Georgia</td>
+      <td>107.191.51.12</td>
+      <td>18.4MB/s</td>
+      <td>131.827 ms</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Vultr, Miami, Florida</td>
+      <td>108.61.193.166</td>
+      <td>14.9MB/s</td>
+      <td>167.487 ms</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Vultr, Seattle, Washington</td>
+      <td>104.156.244.232</td>
+      <td>13.8MB/s</td>
+      <td>198.241 ms</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Vultr, Dallas, Texas/td>
+      <td>108.61.194.105</td>
+      <td>27.2MB/s</td>
+      <td>86.004 ms</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Vultr, Los Angeles, California</td>
+      <td>108.61.224.175</td>
+      <td>16.9MB/s</td>
+      <td>143.713 ms</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Vultr, Vultr, Sydney, Australia</td>
+      <td>104.156.230.107</td>
+      <td>23.1MB/s</td>
+      <td>108.658 ms</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Digital Ocean, NYC1(New York)</td>
+      <td>108.61.219.200</td>
+      <td>23.5MB/s</td>
+      <td>104.803 ms</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Digital Ocean, NYC2(New York)</td>
+      <td>108.61.212.117</td>
+      <td>11.6MB/s</td>
+      <td>188.251 ms</td>
+    </tr>    
+   
+    <tr>
+      <td>Softlayer Digital Ocean, AMS2(Amsterdam)</td>
+      <td>165.227.194.167</td>
+      <td>5.94MB/s</td>
+      <td>148.624 ms</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Digital Ocean, SFO1(San Francisco)</td>
+      <td>192.241.184.88</td>
+      <td>6.58MB/s</td>
+      <td>147.209 ms</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Digital Ocean, SGP1(Singapore)</td>
+      <td>188.226.175.227</td>
+      <td>4.07MB/s</td>
+      <td>260.379 ms</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Digital Ocean, LON1(London)</td>
+      <td>107.170.223.15</td>
+      <td>9.69MB/s</td>
+      <td>105.548 ms</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Digital Ocean, FRA1(Frankfurt)</td>
+      <td>14.35 Mbit/s</td>
+      <td>4.10 Mbit/s</td>
+      <td>253.443 ms</td>
+    </tr>    
+    
+    <tr>
+      <td>Softlayer Digital Ocean, TOR1(Toronto)</td>
+      <td></td>
+      <td>000.000 ms</td>
+      <td>15.45 Mbit/s</td>
+    </tr>    
+
+    <tr>
+      <td>Softlayer Digital Ocean, BLR1(Bangalore)</td>
+      <td>5.46 Mbit/s</td>
+      <td>239.423 ms</td>
+      <td>6.56 Mbit/s</td>
+    </tr>    
+  </tbody>
+</table>
+</dev>
+
+<div class="ui hidden divider"></div>
+<div class="ui container">
+<table class="ui compact striped table">
+  <thead>
+    <tr>
+      <th>节点</th>
+      <th>上传速度</th>
+      <th>下载速度</th>
+      <th>延迟</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>上海电信</td>
+      <td>306.24 Mbit/s</td>
+      <td>129.528 ms</td>
+      <td>15.25 Mbit/s</td>
+    </tr>
+    <tr>
+      <td>成都电信</td>
+      <td>5.30 Mbit/s</td>
+      <td>211.992 ms</td>
+      <td>0.72 Mbit/s</td>
+    </tr>
+    <tr>
+      <td>西安电信</td>
+      <td>5.29 Mbit/s</td>
+      <td>224.622 ms</td>
+      <td>4.05 Mbit/s</td>
+    </tr>
+    <tr>
+      <td>上海联通</td>
+      <td>158.59 Mbit/s</td>
+      <td>304.744 ms</td>
+      <td>2.20 Mbit/s</td>
+    </tr>
+    <tr>
+      <td>重庆联通</td>
+      <td>4.58 Mbit/s</td>
+      <td>549.567 ms</td>
+      <td>3.34 Mbit/s</td>
+    </tr>
+    <tr>
+      <td>北京电信</td>
+      <td>371.01 Mbit/s</td>
+      <td>347.065 ms</td>
+      <td>3.29 Mbit/s</td>
+    </tr>
+    <tr>
+      <td>北京联通</td>
+      <td>355.04 Mbit/s</td>
+      <td>183.454 ms</td>
+      <td>3.30 Mbit/s</td>
+    </tr>
+    <tr>
+      <td>湖南电信</td>
+      <td>324.13 Mbit/s</td>
+      <td>117.217 ms</td>
+      <td>2.78 Mbit/s</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="ui hidden divider" id="route"></div>
+<h2 class="ui center aligned icon header">
+  <i class="circular Blind icon"></i>
+  路由追踪
+</h2>
+
+<div class="ui hidden divider"></div>
+<div class="ui container">
+<div class="ui top attached tabular menu">
+  <a class="item active" data-tab="first">上海移动</a>
+  <a class="item" data-tab="second">上海电信</a>
+  <a class="item" data-tab="third">上海联通</a>
+  <a class="item" data-tab="fourth">广东移动</a>
+  <a class="item" data-tab="fifth">广东电信</a>
+  <a class="item" data-tab="sixth">广东联通</a>
+  <a class="item" data-tab="seventh">所在地IP</a>
+</div>
+
+
+    
+    <div class="ui bottom attached tab segment active" data-tab="first">
+<table class="ui very compact striped table">
+  <thead>
+    <tr><th>跳数</th>
+    <th>IP</th>
+    <th>路由</th>
+	<th>ISP</th>
+    <th>AS Number</th>
+    <th>延迟</th>
+  </tr></thead>
+  <tbody>
+    
+        
+        <tr>
+      <td>1</td>
+      <td>*.*.*.*(已隐藏)</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>2</td>
+      <td>*.*.*.*(已隐藏)</td>
+      <td>日本 东京都 东京 choopa.com</td>
+      <td>"Vultr Holdings</td>
+      <td> LLC"</td>
+	  <td>22.86 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>3</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>4</td>
+      <td>ce-0-14-0-1.r02.tokyjp05.jp.bb.gin.ntt.net (120.88.54.97)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>4.10 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>5</td>
+      <td>ae-3.r30.tokyjp05.jp.bb.gin.ntt.net (129.250.3.23)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>1.10 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>6</td>
+      <td>ae-4.r24.tkokhk01.hk.bb.gin.ntt.net (129.250.2.51)</td>
+      <td>中国 香港 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT America</td>
+	  <td>48.07 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>7</td>
+      <td>ae-1.r03.tkokhk01.hk.bb.gin.ntt.net (129.250.6.98)</td>
+      <td>中国 香港 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>49.68 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>8</td>
+      <td>ce-0-2-0-3.r03.tkokhk01.hk.ce.gin.ntt.net (203.131.241.86)</td>
+      <td>中国 香港 ntt.com</td>
+      <td>*</td>
+      <td>AS2914</td>
+	  <td>79.18 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>9</td>
+      <td>223.120.2.53</td>
+      <td>中国 香港 移动</td>
+      <td>"China Mobile International Limited"</td>
+      <td>"AS58453 China Mobile International Limited"</td>
+	  <td>62.57 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>10</td>
+      <td>223.120.2.14</td>
+      <td>中国 广东 广州 移动</td>
+      <td>"China Mobile International Limited"</td>
+      <td>"AS58453 China Mobile International Limited"</td>
+	  <td>74.67 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>11</td>
+      <td>221.183.55.62</td>
+      <td>中国 广东 广州 移动</td>
+      <td>"China Mobile"</td>
+      <td>"AS9808 China Mobile"</td>
+	  <td>79.77 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>12</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>13</td>
+      <td>221.176.18.113</td>
+      <td>中国 广东 广州 移动</td>
+      <td>"China Mobile"</td>
+      <td>"AS9808 China Mobile"</td>
+	  <td>80.04 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>14</td>
+      <td>221.176.17.93</td>
+      <td>中国 上海 移动</td>
+      <td>"China Mobile"</td>
+      <td>"AS9808 China Mobile"</td>
+	  <td>105.86 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>15</td>
+      <td>221.183.13.162</td>
+      <td>中国 上海 移动</td>
+      <td>"China Mobile"</td>
+      <td>"AS9808 China Mobile"</td>
+	  <td>104.17 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>16</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>17</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>18</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>19</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>20</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>21</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>22</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>23</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>24</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>25</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>26</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>27</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>28</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>29</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>30</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+      </tbody>
+</table>
+</div>
+    
+    
+    <div class="ui bottom attached tab segment" data-tab="second">
+<table class="ui very compact striped table">
+  <thead>
+    <tr><th>跳数</th>
+    <th>IP</th>
+    <th>路由</th>
+	<th>ISP</th>
+    <th>AS Number</th>
+    <th>延迟</th>
+  </tr></thead>
+  <tbody>
+    
+        
+        <tr>
+      <td>1</td>
+      <td>*.*.*.*(已隐藏)</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>2</td>
+      <td>*.*.*.*(已隐藏)</td>
+      <td>日本 东京都 东京 choopa.com</td>
+      <td>"Vultr Holdings</td>
+      <td> LLC"</td>
+	  <td>23.95 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>3</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>4</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>5</td>
+      <td>ae-22.a02.tokyjp05.jp.bb.gin.ntt.net (120.88.53.65)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>1.51 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>6</td>
+      <td>ae-25.r02.tokyjp05.jp.bb.gin.ntt.net (129.250.6.182)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>5.93 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>7</td>
+      <td>ae-3.r31.tokyjp05.jp.bb.gin.ntt.net (129.250.3.29)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT America</td>
+	  <td>1.28 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>8</td>
+      <td>ae-10.r26.tokyjp05.jp.bb.gin.ntt.net (129.250.2.152)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT America</td>
+	  <td>1.07 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>9</td>
+      <td>202.97.51.61</td>
+      <td>中国 上海 电信</td>
+      <td>"Chinanet BB"</td>
+      <td>"AS4134 No.31</td>
+	  <td>86.84 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>10</td>
+      <td>202.97.63.226</td>
+      <td>中国 上海 电信</td>
+      <td>"Chinanet BB"</td>
+      <td>"AS4134 No.31</td>
+	  <td>97.12 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>11</td>
+      <td>202.97.24.225</td>
+      <td>中国 上海 电信</td>
+      <td>"Chinanet BB"</td>
+      <td>"AS4134 No.31</td>
+	  <td>103.97 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>12</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>13</td>
+      <td>101.95.89.38</td>
+      <td>中国 上海 电信</td>
+      <td>"Chinanet SH"</td>
+      <td>"AS4812 China Telecom (Group)"</td>
+	  <td>98.93 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>14</td>
+      <td>61.152.81.138</td>
+      <td>中国 上海 电信</td>
+      <td>"Chinanet SH"</td>
+      <td>"AS4812 China Telecom (Group)"</td>
+	  <td>102.32 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>15</td>
+      <td>101.95.117.198</td>
+      <td>中国 上海 电信</td>
+      <td>"Chinanet SH"</td>
+      <td>"AS4812 China Telecom (Group)"</td>
+	  <td>98.53 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>16</td>
+      <td>ns.fudan.sh.cn (61.129.42.6)</td>
+      <td>中国 上海 电信</td>
+      <td>"Fudan University"</td>
+      <td>"AS4812 China Telecom (Group)"</td>
+	  <td>99.98 ms</td>
+    </tr>
+        
+        
+      </tbody>
+</table>
+</div>
+    
+    
+    <div class="ui bottom attached tab segment" data-tab="third">
+<table class="ui very compact striped table">
+  <thead>
+    <tr><th>跳数</th>
+    <th>IP</th>
+    <th>路由</th>
+	<th>ISP</th>
+    <th>AS Number</th>
+    <th>延迟</th>
+  </tr></thead>
+  <tbody>
+    
+        
+        <tr>
+      <td>1</td>
+      <td>*.*.*.*(已隐藏)</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>2</td>
+      <td>*.*.*.*(已隐藏)</td>
+      <td>日本 东京都 东京 choopa.com</td>
+      <td>"Vultr Holdings</td>
+      <td> LLC"</td>
+	  <td>13.04 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>3</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>4</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>5</td>
+      <td>ae-22.a02.tokyjp05.jp.bb.gin.ntt.net (120.88.53.65)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>2.24 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>6</td>
+      <td>ae-25.r02.tokyjp05.jp.bb.gin.ntt.net (129.250.6.182)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT America</td>
+	  <td>5.70 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>7</td>
+      <td>ae-3.r31.tokyjp05.jp.bb.gin.ntt.net (129.250.3.29)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>1.57 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>8</td>
+      <td>ae-9.r25.osakjp02.jp.bb.gin.ntt.net (129.250.7.81)</td>
+      <td>日本 大阪府 大阪 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>8.89 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>9</td>
+      <td>ae-2.r02.osakjp02.jp.bb.gin.ntt.net (129.250.2.128)</td>
+      <td>日本 大阪府 大阪 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT America</td>
+	  <td>8.57 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>10</td>
+      <td>219.158.39.197</td>
+      <td>中国 上海 联通</td>
+      <td>"Backbone of CNC group"</td>
+      <td>"AS4837 CHINA UNICOM China169 Backbone"</td>
+	  <td>231.99 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>11</td>
+      <td>219.158.113.122</td>
+      <td>中国 上海 联通</td>
+      <td>"CNC group"</td>
+      <td>"AS4837 CHINA UNICOM China169 Backbone"</td>
+	  <td>224.43 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>12</td>
+      <td>219.158.113.101</td>
+      <td>中国 上海 联通</td>
+      <td>"CNC group"</td>
+      <td>"AS4837 CHINA UNICOM China169 Backbone"</td>
+	  <td>233.51 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>13</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>14</td>
+      <td>139.226.210.54</td>
+      <td>中国 上海 联通</td>
+      <td>"Unicom SH"</td>
+      <td>"AS17621 China Unicom Shanghai network"</td>
+	  <td>231.14 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>15</td>
+      <td>112.64.249.154</td>
+      <td>中国 上海 联通</td>
+      <td></td>
+      <td>"AS17621 China Unicom Shanghai network"</td>
+	  <td>233.08 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>16</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+      </tbody>
+</table>
+</div>
+    
+    
+    <div class="ui bottom attached tab segment" data-tab="fourth">
+<table class="ui very compact striped table">
+  <thead>
+    <tr><th>跳数</th>
+    <th>IP</th>
+    <th>路由</th>
+	<th>ISP</th>
+    <th>AS Number</th>
+    <th>延迟</th>
+  </tr></thead>
+  <tbody>
+    
+        
+        <tr>
+      <td>1</td>
+      <td>*.*.*.*(已隐藏)</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>2</td>
+      <td>*.*.*.*(已隐藏)</td>
+      <td>日本 东京都 东京 choopa.com</td>
+      <td>"Vultr Holdings</td>
+      <td> LLC"</td>
+	  <td>23.73 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>3</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>4</td>
+      <td>ce-0-14-0-1.r02.tokyjp05.jp.bb.gin.ntt.net (120.88.54.97)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td>"NTT Communications Corporation"</td>
+      <td>"AS2914 NTT America</td>
+	  <td>1.17 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>5</td>
+      <td>ae-3.r30.tokyjp05.jp.bb.gin.ntt.net (129.250.3.23)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>1.19 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>6</td>
+      <td>ae-4.r24.tkokhk01.hk.bb.gin.ntt.net (129.250.2.51)</td>
+      <td>中国 香港 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>46.00 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>7</td>
+      <td>ae-1.r02.tkokhk01.hk.bb.gin.ntt.net (129.250.6.92)</td>
+      <td>中国 香港 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>43.58 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>8</td>
+      <td>ce-0-4-0-0.r02.tkokhk01.hk.ce.gin.ntt.net (203.131.241.82)</td>
+      <td>中国 香港 ntt.com</td>
+      <td>*</td>
+      <td>AS2914</td>
+	  <td>48.05 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>9</td>
+      <td>223.120.2.117</td>
+      <td>中国 香港 移动</td>
+      <td>"China Mobile International Limited"</td>
+      <td>"AS58453 China Mobile International Limited"</td>
+	  <td>53.54 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>10</td>
+      <td>223.120.2.82</td>
+      <td>中国 广东 广州 移动</td>
+      <td>"China Mobile International Limited"</td>
+      <td>"AS58453 China Mobile International Limited"</td>
+	  <td>61.20 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>11</td>
+      <td>221.183.55.86</td>
+      <td>中国 广东 广州 移动</td>
+      <td>"China Mobile"</td>
+      <td>"AS9808 China Mobile"</td>
+	  <td>60.97 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>12</td>
+      <td>221.176.24.229</td>
+      <td>中国 广东 广州 移动</td>
+      <td>"China Mobile"</td>
+      <td>"AS9808 China Mobile"</td>
+	  <td>64.87 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>13</td>
+      <td>221.176.22.109</td>
+      <td>中国 广东 广州 移动</td>
+      <td>"China Mobile"</td>
+      <td>"AS9808 China Mobile"</td>
+	  <td>54.92 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>14</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>15</td>
+      <td>120.198.206.166</td>
+      <td>中国 广东 广州 移动</td>
+      <td>"China Mobile"</td>
+      <td>"AS56040 China Mobile Communications Corporation"</td>
+	  <td>58.73 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>16</td>
+      <td>120.197.27.246</td>
+      <td>中国 广东 广州 移动</td>
+      <td>"China Mobile"</td>
+      <td>"AS56040 China Mobile Communications Corporation"</td>
+	  <td>57.91 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>17</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+      </tbody>
+</table>
+</div>
+    
+    
+    <div class="ui bottom attached tab segment" data-tab="fifth">
+<table class="ui very compact striped table">
+  <thead>
+    <tr><th>跳数</th>
+    <th>IP</th>
+    <th>路由</th>
+	<th>ISP</th>
+    <th>AS Number</th>
+    <th>延迟</th>
+  </tr></thead>
+  <tbody>
+    
+        
+        <tr>
+      <td>1</td>
+      <td>*.*.*.*(已隐藏)</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>2</td>
+      <td>*.*.*.*(已隐藏)</td>
+      <td>日本 东京都 东京 choopa.com</td>
+      <td>"Vultr Holdings</td>
+      <td> LLC"</td>
+	  <td>19.05 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>3</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>4</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>5</td>
+      <td>ae-22.a02.tokyjp05.jp.bb.gin.ntt.net (120.88.53.65)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>1.39 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>6</td>
+      <td>ae-25.r02.tokyjp05.jp.bb.gin.ntt.net (129.250.6.182)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>6.10 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>7</td>
+      <td>ae-3.r30.tokyjp05.jp.bb.gin.ntt.net (129.250.3.23)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT America</td>
+	  <td>1.37 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>8</td>
+      <td>ae-10.r27.tokyjp05.jp.bb.gin.ntt.net (129.250.2.156)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT America</td>
+	  <td>1.05 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>9</td>
+      <td>xe-0.chinanet.tokyjp05.jp.bb.gin.ntt.net (129.250.66.10)</td>
+      <td>中国 广东 广州 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>111.66 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>10</td>
+      <td>202.97.94.97</td>
+      <td>中国 广东 广州 电信</td>
+      <td>"Chinanet BB"</td>
+      <td>"AS4134 No.31</td>
+	  <td>124.28 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>11</td>
+      <td>202.97.94.141</td>
+      <td>中国 广东 广州 电信</td>
+      <td>"Chinanet BB"</td>
+      <td>"AS4134 No.31</td>
+	  <td>131.79 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>12</td>
+      <td>183.59.5.65</td>
+      <td>中国 广东 广州 电信</td>
+      <td>"Chinanet GD"</td>
+      <td>"AS58543 Guangdong"</td>
+	  <td>128.19 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>13</td>
+      <td>183.59.5.154</td>
+      <td>中国 广东 汕头 电信</td>
+      <td>"Chinanet GD"</td>
+      <td>"AS58543 Guangdong"</td>
+	  <td>133.79 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>14</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>15</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>16</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>17</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>18</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>19</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>20</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>21</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>22</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>23</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>24</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>25</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>26</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>27</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>28</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>29</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>30</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+      </tbody>
+</table>
+</div>
+    
+    
+    <div class="ui bottom attached tab segment" data-tab="sixth">
+<table class="ui very compact striped table">
+  <thead>
+    <tr><th>跳数</th>
+    <th>IP</th>
+    <th>路由</th>
+	<th>ISP</th>
+    <th>AS Number</th>
+    <th>延迟</th>
+  </tr></thead>
+  <tbody>
+    
+        
+        <tr>
+      <td>1</td>
+      <td>*.*.*.*(已隐藏)</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>2</td>
+      <td>*.*.*.*(已隐藏)</td>
+      <td>日本 东京都 东京 choopa.com</td>
+      <td>"Vultr Holdings</td>
+      <td> LLC"</td>
+	  <td>29.59 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>3</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>4</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>5</td>
+      <td>ae-22.a02.tokyjp05.jp.bb.gin.ntt.net (120.88.53.65)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>1.32 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>6</td>
+      <td>ae-25.r02.tokyjp05.jp.bb.gin.ntt.net (129.250.6.182)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT America</td>
+	  <td>4.22 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>7</td>
+      <td>ae-3.r30.tokyjp05.jp.bb.gin.ntt.net (129.250.3.23)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>2.75 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>8</td>
+      <td>ae-9.r26.tokyjp05.jp.bb.gin.ntt.net (129.250.2.10)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT America</td>
+	  <td>1.10 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>9</td>
+      <td>219.158.42.5</td>
+      <td>中国 广东 广州 联通</td>
+      <td>"Backbone of CNC group"</td>
+      <td>"AS4837 CHINA UNICOM China169 Backbone"</td>
+	  <td>108.09 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>10</td>
+      <td>219.158.97.30</td>
+      <td>中国 广东 广州 联通</td>
+      <td>"CNC group"</td>
+      <td>"AS4837 CHINA UNICOM China169 Backbone"</td>
+	  <td>114.61 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>11</td>
+      <td>219.158.19.65</td>
+      <td>中国 广东 广州 联通</td>
+      <td></td>
+      <td>"AS4837 CHINA UNICOM China169 Backbone"</td>
+	  <td>107.39 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>12</td>
+      <td>120.81.0.102</td>
+      <td>中国 广东 广州 联通</td>
+      <td></td>
+      <td>"AS17816 China Unicom  IP network China169 Guangdong province"</td>
+	  <td>102.25 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>13</td>
+      <td>221.4.6.14</td>
+      <td>中国 广东 广州 联通</td>
+      <td></td>
+      <td>"AS17816 China Unicom  IP network China169 Guangdong province"</td>
+	  <td>91.14 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>14</td>
+      <td>cache2-gd.cnc-gd.net (221.5.88.88)</td>
+      <td>中国 广东 广州 联通</td>
+      <td></td>
+      <td>"AS17816 China Unicom  IP network China169 Guangdong province"</td>
+	  <td>100.26 ms</td>
+    </tr>
+        
+        
+      </tbody>
+</table>
+</div>
+    
+    
+    <div class="ui bottom attached tab segment" data-tab="seventh">
+<table class="ui very compact striped table">
+  <thead>
+    <tr><th>跳数</th>
+    <th>IP</th>
+    <th>路由</th>
+	<th>ISP</th>
+    <th>AS Number</th>
+    <th>延迟</th>
+  </tr></thead>
+  <tbody>
+    
+        
+        <tr>
+      <td>1</td>
+      <td>*.*.*.*(已隐藏)</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>2</td>
+      <td>*.*.*.*(已隐藏)</td>
+      <td>日本 东京都 东京 choopa.com</td>
+      <td>"Vultr Holdings</td>
+      <td> LLC"</td>
+	  <td>16.76 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>3</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>4</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>5</td>
+      <td>ae-22.a02.tokyjp05.jp.bb.gin.ntt.net (120.88.53.65)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>2.02 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>6</td>
+      <td>ae-4.r03.tokyjp05.jp.bb.gin.ntt.net (129.250.6.188)</td>
+      <td>日本 东京都 东京 ntt.com</td>
+      <td> Inc."</td>
+      <td>"NTT Communications Corporation"</td>
+	  <td>1.33 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>7</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+      <td>*</td>
+	  <td>*</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>8</td>
+      <td>4.69.218.106</td>
+      <td>日本 东京都 东京 level3.com</td>
+      <td> Inc."</td>
+      <td>"Level 3</td>
+	  <td>3.87 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>9</td>
+      <td>113.29.10.54</td>
+      <td>日本 东京都 东京 level3.com</td>
+      <td> Inc."</td>
+      <td></td>
+	  <td>2.58 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>10</td>
+      <td>209.159.174.228</td>
+      <td>美国 intelsat.com</td>
+      <td>Qkon</td>
+      <td>"AS22351 INTELSAT GLOBAL SERVICE CORPORATION"</td>
+	  <td>154.92 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>11</td>
+      <td>83.170.143.37</td>
+      <td>英国 intelsat.com</td>
+      <td>"Intelsat Global Sales & Marketing LTD"</td>
+      <td>"AS22351 INTELSAT GLOBAL SERVICE CORPORATION"</td>
+	  <td>154.01 ms</td>
+    </tr>
+        
+        
+        
+        <tr>
+      <td>12</td>
+      <td>64.88.227.220</td>
+      <td>美国 intelsat.com</td>
+      <td>"PanAmSat Corporation"</td>
+      <td>"AS22351 INTELSAT GLOBAL SERVICE CORPORATION"</td>
+	  <td>152.75 ms</td>
+    </tr>
+        
+        
+      </tbody>
+</table>
+</div>
+    
+</div>
+</div>
+<div class="ui hidden divider"></div>
+<div class="ui visible message">
+  <p>CopyRight 2016-2018 <a href="https://www.github.com/FunctionClub">Function Club</a>. All Right Reserved.   Published By <a href="https://www.geoseis.cn">Geoseis</a></p>
+</div>
+
+</body>
+<footer>
+<script type="text/javascript"> 
+//平滑滚动支持
+// 转换为数字
+function intval(v)
+{
+    v = parseInt(v);
+    return isNaN(v) ? 0 : v;
+}
+ 
+// 获取元素信息
+function getPos(e)
+{
+    var l = 0;
+    var t  = 0;
+    var w = intval(e.style.width);
+    var h = intval(e.style.height);
+    var wb = e.offsetWidth;
+    var hb = e.offsetHeight;
+    while (e.offsetParent){
+        l += e.offsetLeft + (e.currentStyle?intval(e.currentStyle.borderLeftWidth):0);
+        t += e.offsetTop  + (e.currentStyle?intval(e.currentStyle.borderTopWidth):0);
+        e = e.offsetParent;
+    }
+    l += e.offsetLeft + (e.currentStyle?intval(e.currentStyle.borderLeftWidth):0);
+    t  += e.offsetTop  + (e.currentStyle?intval(e.currentStyle.borderTopWidth):0);
+    return {x:l, y:t, w:w, h:h, wb:wb, hb:hb};
+}
+ 
+// 获取滚动条信息
+function getScroll() 
+{
+    var t, l, w, h;
+    
+    if (document.documentElement && document.documentElement.scrollTop) {
+        t = document.documentElement.scrollTop;
+        l = document.documentElement.scrollLeft;
+        w = document.documentElement.scrollWidth;
+        h = document.documentElement.scrollHeight;
+    } else if (document.body) {
+        t = document.body.scrollTop;
+        l = document.body.scrollLeft;
+        w = document.body.scrollWidth;
+        h = document.body.scrollHeight;
+    }
+    return { t: t, l: l, w: w, h: h };
+}
+ 
+// 锚点(Anchor)间平滑跳转
+function scroller(el, duration)
+{
+    if(typeof el != 'object') { el = document.getElementById(el); }
+ 
+    if(!el) return;
+ 
+    var z = this;
+    z.el = el;
+    z.p = getPos(el);
+    z.s = getScroll();
+    z.clear = function(){window.clearInterval(z.timer);z.timer=null};
+    z.t=(new Date).getTime();
+ 
+    z.step = function(){
+        var t = (new Date).getTime();
+        var p = (t - z.t) / duration;
+        if (t >= duration + z.t) {
+            z.clear();
+            window.setTimeout(function(){z.scroll(z.p.y, z.p.x)},13);
+        } else {
+            st = ((-Math.cos(p*Math.PI)/2) + 0.5) * (z.p.y-z.s.t) + z.s.t;
+            sl = ((-Math.cos(p*Math.PI)/2) + 0.5) * (z.p.x-z.s.l) + z.s.l;
+            z.scroll(st, sl);
+        }
+    };
+    z.scroll = function (t, l){window.scrollTo(l, t)};
+    z.timer = window.setInterval(function(){z.step();},13);
+}
+</script>
+<script type="text/javascript">
+//Tab功能支持
+    $('.menu .item')
+    .tab()
+    ;
+//Message工具
+$('.message .close')
+  .on('click', function() {
+    $(this)
+      .closest('.message')
+      .transition('fade')
+    ;
+  })
+;
+//Model
+$('.ui.basic.modal')
+  .modal('show')
+  .closable('false')
+;
+</script>
+</footer>
+</html>
+
+
