@@ -1,24 +1,21 @@
 # Zench
 
-又一个Linux VPS测评脚本
+Linux VPS测评脚本：基于FunctionClub版本来的，没有很多变动。主要变化是增加了很多节点，方便查看全球范围内各测速点到VPS的速度。
 
 ## 说明
 
-平时测试VPS的时候一直是靠着 **Bench.sh** 来测试的，最近看到 **Oldking**大佬 的 **SuperBench** 也很方便。我自己把这两者的脚本结合在一起，然后加入 **Ping** 以及 **路由测试** 功能。比较懒人，简单快捷。方便VPS测评站的朋友们使用。因为会生成测评报告，可以很方便地分享给其他朋友看自己的测评数据。
+生成的HTML报告暂时只能保存在/root/report.html。因为FunctionClub的API用法我不熟悉，有时间再去改进。
 
 示例(Demo)：[https://www.zhujiboke.com/zbench-example.html](https://www.zhujiboke.com/zbench-example.html)
 
 ## 脚本命令
 
-如果中文版出现乱码等情况，请换成英文版。
+这里只更新了ZBench.sh和ZPing-CN.py, Generate.py，暂时没有区分中英文版本。
 
-中文版：
-
-    wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/ZBench/master/ZBench-CN.sh && bash ZBench-CN.sh
     
 英文版：
 
-    wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/ZBench/master/ZBench.sh && bash ZBench.sh
+    wget -N --no-check-certificate https://raw.githubusercontent.com/chenxuzhen/ZBench/master/ZBench.sh && chmod a+rx ZBench.sh && sudo bash ZBench.sh
     
 ## 效果图
 
