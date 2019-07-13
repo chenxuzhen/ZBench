@@ -125,14 +125,14 @@ chmod a+rx /tmp/speedtest.py
 
 
 # Install Zping
-if  [ ! -e '/tmp/ZPing.py' ]; then
-    echo "Installing ZPing.py......"
+if  [ ! -e '/tmp/ZPing-CN.py' ]; then
+    echo "Installing ZPing-CN.py......"
     dir=$(pwd)
     cd /tmp/
     wget  -N --no-check-certificate https://github.com/chenxuzhen/ZBench/blob/master/ZPing-CN.py > /dev/null 2>&1
     cd $dir
 fi
-chmod a+rx /tmp/ZPing.py
+chmod a+rx /tmp/ZPing-CN.py
 
 #"TraceRoute to Shanghai Telecom"
 /tmp/besttrace 61.129.42.6 > /tmp/sht.txt 2>&1 &
@@ -418,7 +418,7 @@ printf "%-76s%-18s%-20s%-12s\n" "Node Name" "IP Address" "Download Speed" "Laten
 speed && next
 printf "%-76s%-18s%-20s%-12s\n" "Node Name" "Upload Speed" "Download Speed" "Latency"
 speed_cn && next
-python /tmp/ZPing.py
+python /tmp/ZPing-CN.py
 next
 
 
