@@ -809,14 +809,14 @@ html = html.format(info[0],info[1],info[2],info[3],info[4],info[5],info[6],info[
 
 speed[0],speed[1],speed[2],speed[3],speed[4],speed[5],speed[6],speed[7],speed[8],speed[9],speed[10],speed[11],speed[12],speed[13],speed[14],speed[15],\
 
-speed[16],speed[17],speed[18],speed[19],speed[20],speed[21],speed[22],speed[23],speed[24],speed[25],speed[26],speed[27],speed[28],speed[29],speed[30],speed[31],speed[32],\
+speed[16],speed[17],speed[18],speed[19],speed[20],speed[21],speed[22],speed[23],speed[24],speed[25],speed[26],speed[27],speed[28],speed[29],speed[30],speed[31],speed[32],speed[33],speed[34],speed[35],\
 
 speed_cn[0],speed_cn[1],speed_cn[2],speed_cn[3],speed_cn[4],speed_cn[5],speed_cn[6],speed_cn[7],speed_cn[8],speed_cn[9],speed_cn[10],speed_cn[11],speed_cn[12],\
 
 speed_cn[13],speed_cn[14],speed_cn[15],speed_cn[16],speed_cn[17],speed_cn[18],speed_cn[19],speed_cn[20],speed_cn[21],speed_cn[22],speed_cn[23],\
 speed_cn[24],speed_cn[25],speed_cn[26],speed_cn[27],speed_cn[28],speed_cn[29],speed_cn[30],speed_cn[31],speed_cn[32],speed_cn[33],speed_cn[34],speed_cn[35],speed_cn[36],\
 speed_cn[37],speed_cn[38],speed_cn[39],speed_cn[40],speed_cn[41],speed_cn[42],speed_cn[43],speed_cn[44],speed_cn[45],speed_cn[46],speed_cn[47],speed_cn[48],speed_cn[49],\
-speed_cn[50],speed_cn[51],speed_cn[52],speed_cn[53],speed_cn[54],speed_cn[55],speed_cn[56],speed_cn[57],speed_cn[58],speed_cn[59],speed_cn[60])	
+speed_cn[50],speed_cn[51],speed_cn[52],speed_cn[53],speed_cn[54],speed_cn[55],speed_cn[56],speed_cn[57],speed_cn[58])	
 
 html = html + shm_html + sht_html + shu_html + gdm_html + gdt_html + gdu_html + own_html + footer
 
