@@ -96,7 +96,7 @@ if  [ ! -e '/tmp/besttrace' ]; then
     echo "Installing Besttrace......"
     dir=$(pwd)
     cd /tmp/
-    wget  -N --no-check-certificate https://github.com/chenxuzhen/ZBench/blob/master/besttrace > /dev/null 2>&1
+    wget  -N --no-check-certificate https://raw.githubusercontent.com/chenxuzhen/ZBench/master/besttrace > /dev/null 2>&1
     cd $dir
 fi
 chmod a+rx /tmp/besttrace
