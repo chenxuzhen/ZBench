@@ -129,7 +129,7 @@ if  [ ! -e '/tmp/ZPing-CN.py' ]; then
     echo "Installing ZPing-CN.py......"
     dir=$(pwd)
     cd /tmp/
-    wget  -N --no-check-certificate https://github.com/chenxuzhen/ZBench/blob/master/ZPing-CN.py > /dev/null 2>&1
+    wget  -N --no-check-certificate https://raw.githubusercontent.com/chenxuzhen/ZBench/master/ZPing-CN.py > /dev/null 2>&1
     cd $dir
 fi
 chmod a+rx /tmp/ZPing-CN.py
@@ -473,7 +473,7 @@ NetDWCM=$( sed -n "26p" /tmp/speed_cn.txt )
 NetPiCM=$( sed -n "27p" /tmp/speed_cn.txt )
 
 
-wget  -N --no-check-certificate https://github.com/chenxuzhen/ZBench/blob/master/Generate.py >> /dev/null 2>&1
+wget  -N --no-check-certificate https://raw.githubusercontent.com/chenxuzhen/ZBench/master/Generate.py >> /dev/null 2>&1
 python Generate.py && rm -rf Generate.py && cp /root/report.html /tmp/report/index.html
 TSM=$( cat /tmp/shm.txt_table )
 TST=$( cat /tmp/sht.txt_table )
