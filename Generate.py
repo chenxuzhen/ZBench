@@ -405,7 +405,8 @@ html = """
     <tr>
       <td>Softlayer 新加坡</td>
       <td>{42}</td>
-      <td>{43}</td><td>{44}</td>
+      <td>{43}</td>
+      <td>{44}</td>
     </tr>
     <tr>
       <td>Softlayer 香港</td>
@@ -505,7 +506,6 @@ html = """
       <td>{86}</td>
     </tr>    
 
-
     <tr>
       <td>Softlayer Digital Ocean, NYC1(New York)</td>
       <td>{87}</td>
@@ -519,9 +519,8 @@ html = """
       <td>{91}</td>
       <td>{92}</td>
     </tr>    
-
    
-  <tr>
+    <tr>
       <td>Softlayer Digital Ocean, AMS2(Amsterdam)</td>
       <td>{93}</td>
       <td>{94}</td>
@@ -537,39 +536,38 @@ html = """
 
     <tr>
       <td>Softlayer Digital Ocean, SGP1(Singapore)</td>
+      <td>{99}</td>
       <td>{100}</td>
       <td>{101}</td>
-      <td>{102}</td>
     </tr>    
 
     <tr>
       <td>Softlayer Digital Ocean, LON1(London)</td>
+      <td>{102}</td>
       <td>{103}</td>
       <td>{104}</td>
-      <td>{105}</td>
     </tr>    
 
     <tr>
       <td>Softlayer Digital Ocean, FRA1(Frankfurt)</td>
+      <td>{105}</td>
       <td>{106}</td>
       <td>{107}</td>
-      <td>{108}</td>
     </tr>    
     
     <tr>
       <td>Softlayer Digital Ocean, TOR1(Toronto)</td>
-      <td>{109}</td>
-      <td>{110}</td>
-      <td>{111}</td>
+      <td>{108}</td>
+      <td>{119}</td>
+      <td>{120}</td>
     </tr>    
 
     <tr>
       <td>Softlayer Digital Ocean, BLR1(Bangalore)</td>
-      <td>{112}</td>
-      <td>{113}</td>
-      <td>{114}</td>
+      <td>{121}</td>
+      <td>{122}</td>
+      <td>{123}</td>
     </tr>    
-
     
   </tbody>
 </table>
@@ -589,51 +587,51 @@ html = """
   <tbody>
     <tr>
       <td>上海电信</td>
-      <td>{115}</td>
-      <td>{116}</td>
-      <td>{117}</td>
-    </tr>
-    <tr>
-      <td>成都电信</td>
-      <td>{118}</td>
-      <td>{119}</td>
-      <td>{120}</td>
-    </tr>
-    <tr>
-      <td>西安电信</td>
-      <td>{121}</td>
-      <td>{122}</td>
-      <td>{123}</td>
-    </tr>
-    <tr>
-      <td>上海联通</td>
       <td>{124}</td>
       <td>{125}</td>
       <td>{126}</td>
     </tr>
     <tr>
-      <td>重庆联通</td>
+      <td>成都电信</td>
       <td>{127}</td>
       <td>{128}</td>
       <td>{129}</td>
     </tr>
     <tr>
-      <td>北京电信</td>
+      <td>西安电信</td>
       <td>{130}</td>
       <td>{131}</td>
       <td>{132}</td>
     </tr>
     <tr>
-      <td>北京联通</td>
+      <td>上海联通</td>
       <td>{133}</td>
       <td>{134}</td>
       <td>{135}</td>
     </tr>
     <tr>
-      <td>湖南电信</td>
+      <td>重庆联通</td>
       <td>{136}</td>
       <td>{137}</td>
       <td>{138}</td>
+    </tr>
+    <tr>
+      <td>北京电信</td>
+      <td>{139}</td>
+      <td>{140}</td>
+      <td>{141}</td>
+    </tr>
+    <tr>
+      <td>北京联通</td>
+      <td>{142}</td>
+      <td>{143}</td>
+      <td>{144}</td>
+    </tr>
+    <tr>
+      <td>湖南电信</td>
+      <td>{145}</td>
+      <td>{146}</td>
+      <td>{147}</td>
     </tr>
   </tbody>
 </table>
@@ -665,7 +663,7 @@ footer = """
 </div>
 <div class="ui hidden divider"></div>
 <div class="ui visible message">
-  <p>CopyRight 2016-2018 <a href="https://www.github.com/FunctionClub">Function Club</a>. All Right Reserved.   Published By <a href="https://www.zhujiboke.com">主机博客</a></p>
+  <p>CopyRight 2016-2018 <a href="https://www.github.com/FunctionClub">Function Club</a>. All Right Reserved.   Published By <a href="https://www.geoseis.cn">Geoseis</a></p>
 </div>
 
 </body>
@@ -815,9 +813,9 @@ speed[16],speed[17],speed[18],speed[19],speed[20],speed[21],speed[22],speed[23],
 
 speed_cn[0],speed_cn[1],speed_cn[2],speed_cn[3],speed_cn[4],speed_cn[5],speed_cn[6],speed_cn[7],speed_cn[8],speed_cn[9],speed_cn[10],speed_cn[11],speed_cn[12],\
 
-speed_cn[13],speed_cn[14],speed_cn[15],speed_cn[16],speed_cn[17],\
-
-speed_cn[18],speed_cn[19],speed_cn[20],speed_cn[21],speed_cn[22],speed_cn[23])
+speed_cn[13],speed_cn[14],speed_cn[15],speed_cn[16],speed_cn[17],speed_cn[18],speed_cn[19],speed_cn[20],speed_cn[21],speed_cn[22],speed_cn[23],\
+speed_cn[24],speed_cn[25],speed_cn[26],speed_cn[27],speed_cn[28],speed_cn[29],speed_cn[30],speed_cn[31],speed_cn[32],speed_cn[33],speed_cn[34],speed_cn[35],speed_cn[36],\
+speed_cn[37],speed_cn[38],speed_cn[39],speed_cn[40],speed_cn[41],speed_cn[42],speed_cn[43],speed_cn[44],speed_cn[45],speed_cn[46],speed_cn[47],speed_cn[48],speed_cn[49])		 
 
 html = html + shm_html + sht_html + shu_html + gdm_html + gdt_html + gdu_html + own_html + footer
 
