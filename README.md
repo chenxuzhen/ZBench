@@ -19,10 +19,12 @@ Linux VPS测评脚本：基于FunctionClub版本来的，没有很多变动。�
     
 ## 效果图
 
-![1.png](1.png)
+![test2.jpeg](test2.png)
 
 
-![2.png](2.png)
+![test1.jpeg](test1.png)
+
+![test3.jpeg](test3.png)
 
 ## 引用
 
