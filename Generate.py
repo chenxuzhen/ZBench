@@ -123,7 +123,7 @@ html = """
 <html>
 <head>
     <meta charset="UTF-8" id="home">
-    <meta name="keywords" content="Zbench,Function Club,Bench Mark,VPS,主机博客,测评,测试脚本">
+    <meta name="keywords" content="Zbench,Geoseis,Bench Mark,VPS,Geo,测评,测试脚本">
     <title>Zbench v1.0 HTML Output</title>
 <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/semantic-ui/2.2.13/semantic.min.css">
 <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
@@ -152,13 +152,13 @@ html = """
       更多
       <i class="dropdown icon"></i>
       <div class="menu">
-        <a class="item" href="https://www.github.com/FunctionClub"><i class="edit icon"></i> 关于我们</a>
-        <a class="item" href="https://github.com/FunctionClub/ZBench/"><i class="github icon"></i>Github </a>
+        <a class="item" href="https://www.geoseis.cn"><i class="edit icon"></i> 关于我们</a>
+        <a class="item" href="https://github.com/chenxuzhen/ZBench/"><i class="github icon"></i>Github </a>
       </div>
     </div>
     <div class="right item">
       <div class="ui">    
-            <a href="https://github.com/FunctionClub/ZBench/">ZBench v1.0-Beta</a>
+            <a href="https://github.com/chenxuzhen/ZBench/">ZBench v1.0-Beta</a>
       </div>
     </div>
   </div>
@@ -415,154 +415,154 @@ html = """
     </tr>
     
     <tr>
-      <td>Softlayer Vultr, Frankfurt, DE</td>
+      <td>Vultr, Frankfurt, DE</td>
       <td>{48}</td>
       <td>{49}</td>
       <td>{50}</td>
     </tr>    
     
     <tr>
-      <td>Softlayer Vultr, Paris, France</td>
+      <td>Vultr, Paris, France</td>
       <td>{51}</td>
       <td>{52}</td>
       <td>{53}</td>
     </tr>       
 
     <tr>
-      <td>Softlayer Vultr, London, UK</td>
+      <td>Vultr, London, UK</td>
       <td>{54}</td>
       <td>{55}</td>
       <td>{56}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Vultr, Singapore</td>
+      <td>Vultr, Singapore</td>
       <td>{57}</td>
       <td>{58}</td>
       <td>{59}</td>
     </tr>    
     
     <tr>
-      <td>Softlayer Vultr, New York (New Jersey)</td>
+      <td>Vultr, New York (New Jersey)</td>
       <td>{60}</td>
       <td>{61}</td>
       <td>{62}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Vultr, Tokyo, Japan</td>
+      <td>Vultr, Tokyo, Japan</td>
       <td>{63}</td>
       <td>{64}</td>
       <td>{65}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Vultr, Chicago, Illinois</td>
+      <td>Vultr, Chicago, Illinois</td>
       <td>{66}</td>
       <td>{67}</td>
       <td>{68}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Vultr, Atlanta, Georgia</td>
+      <td>Vultr, Atlanta, Georgia</td>
       <td>{69}</td>
       <td>{70}</td>
       <td>{71}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Vultr, Miami, Florida</td>
+      <td>Vultr, Miami, Florida</td>
       <td>{72}</td>
       <td>{73}</td>
       <td>{74}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Vultr, Seattle, Washington</td>
+      <td>Vultr, Seattle, Washington</td>
       <td>{75}</td>
       <td>{76}</td>
       <td>{77}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Vultr, Dallas, Texas/td>
+      <td>Vultr, Dallas, Texas/td>
       <td>{78}</td>
       <td>{79}</td>
       <td>{80}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Vultr, Los Angeles, California</td>
+      <td>Vultr, Los Angeles, California</td>
       <td>{81}</td>
       <td>{82}</td>
       <td>{83}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Vultr, Vultr, Sydney, Australia</td>
+      <td>Vultr, Vultr, Sydney, Australia</td>
       <td>{84}</td>
       <td>{85}</td>
       <td>{86}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Digital Ocean, NYC1(New York)</td>
+      <td>Digital Ocean, NYC1(New York)</td>
       <td>{87}</td>
       <td>{88}</td>
       <td>{89}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Digital Ocean, NYC2(New York)</td>
+      <td>Digital Ocean, NYC2(New York)</td>
       <td>{90}</td>
       <td>{91}</td>
       <td>{92}</td>
     </tr>    
    
     <tr>
-      <td>Softlayer Digital Ocean, AMS2(Amsterdam)</td>
+      <td>Digital Ocean, AMS2(Amsterdam)</td>
       <td>{93}</td>
       <td>{94}</td>
       <td>{95}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Digital Ocean, SFO1(San Francisco)</td>
+      <td>Digital Ocean, SFO1(San Francisco)</td>
       <td>{96}</td>
       <td>{97}</td>
       <td>{98}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Digital Ocean, SGP1(Singapore)</td>
+      <td>Digital Ocean, SGP1(Singapore)</td>
       <td>{99}</td>
       <td>{100}</td>
       <td>{101}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Digital Ocean, LON1(London)</td>
+      <td>Digital Ocean, LON1(London)</td>
       <td>{102}</td>
       <td>{103}</td>
       <td>{104}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Digital Ocean, FRA1(Frankfurt)</td>
+      <td>Digital Ocean, FRA1(Frankfurt)</td>
       <td>{105}</td>
       <td>{106}</td>
       <td>{107}</td>
     </tr>    
     
     <tr>
-      <td>Softlayer Digital Ocean, TOR1(Toronto)</td>
+      <td>Digital Ocean, TOR1(Toronto)</td>
       <td>{108}</td>
       <td>{119}</td>
       <td>{120}</td>
     </tr>    
 
     <tr>
-      <td>Softlayer Digital Ocean, BLR1(Bangalore)</td>
+      <td>Digital Ocean, BLR1(Bangalore)</td>
       <td>{121}</td>
       <td>{122}</td>
       <td>{123}</td>
@@ -661,7 +661,7 @@ footer = """
 </div>
 <div class="ui hidden divider"></div>
 <div class="ui visible message">
-  <p>CopyRight 2016-2018 <a href="https://www.github.com/FunctionClub">Function Club</a>. All Right Reserved.   Published By <a href="https://www.geoseis.cn">Geoseis</a></p>
+  <p>CopyRight 2019-2021 <a href="https://www.github.com/chenxuzhen">Geoseis</a>. All Right Reserved.   Published By <a href="https://www.geoseis.cn">Geoseis</a></p>
 </div>
 
 </body>
